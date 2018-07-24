@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+        <link rel="stylesheet" href="css/font-awesome-4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="css/audioPlay.css">
+        <title>音乐播放器</title>
+        <style>
+        </style>
+        <script src="js/mp3.js"></script>
+    </head>
+
+    <body>
+        <div id="id-player-container">
+            <header>
+                <span class="pg1 show">音乐</span>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <span class="pg2">播放列表</span>
+            </header>
+            <section class="audio-play-pg1">
+                <header>
+                    仰望
+                </header>
+                <div class="player-img">
+                    <img class="cover" src="images/仰望.jpg" width="230px" height="230px" alt="专辑图">
+                </div>
+                <div class="player-lrc">
+                </div>
+            </section>
+            <ol id="audio-list" class="audio-play-pg2 hidden">
+
+            </ol>
+            <section id="id-player-control-container">
+                <div class="player-progress-bar">
+                    <span class="current-time">00:00</span>
+                    <span class="bar-container">
+                        <span class="bar"></span>
+                        <span class="controller"></span>
+                    </span>
+                    <span class="total-time">00:00</span>
+                    &nbsp;&nbsp;
+                    <i class="fa fa-volume-up" aria-hidden="true">
+                        <input class="volume-control volume-show" type="range" value="50">
+                    </i>
+                </div>
+                <div class="player-button">
+                    <i class="fa fa-backward left" data-offset="-1" aria-hidden="true"></i>
+                    <i class="fa fa-play" aria-hidden="true"></i>
+                    <i class="fa fa-pause hidden" aria-hidden="true"></i>
+                    <i class="fa fa-forward right" data-offset="1" aria-hidden="true"></i>
+                    <i class="fa fa-random hidden" aria-hidden="true"></i>
+                    <i class="fa fa-refresh" aria-hidden="true"></i>
+                </div>
+                <div class="player-control">
+                    <audio id="id-audio-player"  data-index="0" src="mp3/仰望_谢雨欣.mp3"></audio>
+                </div>
+            </section>
+        </div>
+
+        <script src="js/audioPlayer.js"></script>
+
+    </body>
+</html>
